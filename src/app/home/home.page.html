@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ejemplos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ejemplos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <section>
+      <header>Ir usando una funcion</header>
+      <ion-button expand="block" (click)="goToTabs()">Tabs</ion-button>
+    </section> 
+    <section>
+      <header>Ir usando Router Link</header>
+      <ion-button expand="block" [routerLink]="['/emisor']" >Emisor de Variables</ion-button>
+    </section>
+    <section>
+      <ion-button expand="block" [routerLink]="['/componentes-material']" >Componentes Angular Material</ion-button>
+    </section>
+
+  </div>
+</ion-content>
